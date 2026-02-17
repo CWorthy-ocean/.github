@@ -16,6 +16,12 @@ The below table describes our main projects and where to find them:
 | Project         | What it does           | Who for?  |
 | -------------   |-------------| -----|
 | [ROMS-MARBL](https://github.com/CWorthy-ocean/ucla-roms.git) ([docs](https://cworthy-ucla-roms.readthedocs.io/))     | Physical-biogeochemical regional ocean simulations with modules for advanced mCDR research (Fortran)| Experienced ocean modeling scientists who want maximum control over their experiments |
-| [C-Star](https://github.com/CWorthy-ocean/C-Star.git) ([docs](https://c-star.readthedocs.io))         | Allows frictionless serialization and reproduction of complex ocean simulation workflows to ensure verifiable scientific integrity (Python) | Scientists who wish to prepare auditable "blueprints" of their research simulations; carbon accounting verifiers who wish to reproduce and record mCDR research |
+| [C-Star](https://github.com/CWorthy-ocean/C-Star.git) ([docs](https://c-star.readthedocs.io))         | Allows frictionless serialization and reproduction of complex ocean simulation workflows to ensure verifiable scientific integrity (Python) | Scientists who wish to share and reproducibly run models (from "blueprints") and multi-step model/analysis pipelines ("workplans") using simple CLI commands |
 | [ROMS Tools](https://github.com/CWorthy-ocean/roms-tools.git) ([docs](https://roms-tools.readthedocs.io/))    | Generates (netCDF) input data required by ROMS for simulations; Produces high-quality figures and diagnostics of simulation results (Python) | ROMS and C-Star users who want a highly accessible toolkit to help manually prepare ocean simulations |
 | [C-SON Forge](https://github.com/CWorthy-ocean/cson-forge.git) ([docs](https://cworthy-ocean.github.io/cson-forge/))  | Wraps the three above packages, providing an accessible utility to automate (based on existing templates) the preparation of ROMS simulations and their C-Star blueprints. | New scientific users to the [C]Worthy ecosystem who seek an accessible toolkit for conducting reproducible mCDR research. |
+
+# Where to start
+
+To begin developing your own ocean domain, you can start with the default configurations in CSON-Forge and simply change the grid, or explore ROMS-tools in more detail to better understand and configure each of your inputs.
+
+For codifying and running your simulations, especially on an HPC with SLURM, explore the C-Star CLI tools, which will take care of building ROMS-MARBL, launching your simulations in the correct environment, and orchestrating multiple simulations. You can also run smaller example simulations from premade blueprints on your laptop to get a feel for the system.
