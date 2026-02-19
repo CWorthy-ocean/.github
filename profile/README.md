@@ -13,7 +13,7 @@ This page is where all of our development work comes together.
 # Navigating our GitHub
 The below table describes our main projects and where to find them:
 
-| Project         | What it does           | Who for?  |
+| Project         | What it does           | Who it's for  |
 | -------------   |-------------| -----|
 | [ROMS-MARBL](https://github.com/CWorthy-ocean/ucla-roms.git) ([docs](https://cworthy-ucla-roms.readthedocs.io/))     | Physical-biogeochemical regional ocean simulations with modules for advanced mCDR research (Fortran)| Experienced ocean modeling scientists who want maximum control over their experiments |
 | [C-Star*](https://github.com/CWorthy-ocean/C-Star.git) ([docs](https://c-star.readthedocs.io))         | Allows frictionless serialization and reproduction of complex ocean simulation workflows to ensure verifiable scientific integrity (Python) | Scientists who wish to share and reproducibly run models (from "blueprints") and multi-step model/analysis pipelines ("workplans") using simple CLI commands |
