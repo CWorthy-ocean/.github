@@ -32,4 +32,4 @@ If you'd like to skip the details around setting up the model and would learn ho
 
 # We want your feedback!
 
-Anyone is welcome to submit Github issues or start discussions. Let us know what is and isn't working, and where your pain points are for ocean modeling, and what you'd like to see next!
+Anyone is welcome to submit Github issues or start discussions. Let us know what is and isn't working, where your pain points are for ocean modeling, and what you'd like to see next!
