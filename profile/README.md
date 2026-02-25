@@ -2,7 +2,7 @@
 [[C]Worthy](https://www.cworthy.org) is a nonprofit organization dedicated to accelerating ocean-based climate solutions through innovative software and rigorous scientific research.
 For more on [C]Worthy, see our [two minute introduction video](https://www.cworthy.org/#block-7dcd1d1ed572d734b0e9).
 
-This page is where all of our development work comes together.
+This page acts as a guide to our various projects on GitHub and where to get started.
 
 <p align="center">
   <img src="https://github.com/CWorthy-ocean/.github/raw/draft/ALK_FG_CO2uptake_highres.gif" alt="GitHub centered image">
@@ -28,8 +28,8 @@ A user who wants to quickly go from building your own ocean domain to running it
 
 For a more detailed and hands-on tour of all of the inputs that go into a ROMS-MARBL simulation, you can walk through the [ROMS-Tools end-to-end workflow](https://roms-tools.readthedocs.io/en/latest/end_to_end.html). Understanding these components is essential to building a robust and accurate model.
 
-If you'd like to skip the details around setting up the model and would learn how to use pre-configured blueprints and workplans to reproducibly run an ocean model or orchestrate long-running and complex analyses, try out the standalone [C-Star blueprint tutorial](https://c-star.readthedocs.io/en/latest/tutorials/tutorial_bp.html) and workplan tutorial (coming soon).
+If you'd like to skip the details around setting up the model and would learn how to use pre-configured blueprints and workplans to reproducibly run an ocean model or orchestrate long-running and complex analyses, try out the standalone [C-Star blueprint tutorial](https://c-star.readthedocs.io/en/latest/tutorials/tutorial_bp.html) and [workplan tutorial](https://c-star.readthedocs.io/en/latest/tutorials/tutorial_wp.html).
 
 # We want your feedback!
 
-Anyone is welcome to submit Github issues or start discussions. Let us know what is and isn't working, where your pain points are for ocean modeling, and what you'd like to see next!
+Anyone is welcome to submit GitHub issues or start discussions. Let us know what is and isn't working, where your pain points are for ocean modeling, and what you'd like to see next!
