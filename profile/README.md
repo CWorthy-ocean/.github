@@ -20,22 +20,22 @@ It builds on community ocean models with decades of development behind them; its
 
 A typical project chooses a region, a grid and forcing datasets; generates the model's input files from global ocean and atmosphere datasets (GLORYS, ERA5, TPXO tides, river discharge, biogeochemical climatologies); compiles and runs the model on a laptop or an HPC cluster; and analyzes the output, for example computing the CO2 uptake and CDR efficiency of an alkalinity release.
 
-## Our projects
+## Our code repositories
 
-### [UCLA-ROMS](https://github.com/CWorthy-ocean/ucla-roms) ([docs](https://cworthy-ucla-roms.readthedocs.io/))
-The ocean model itself, written in Fortran: our fork of the UCLA Regional Ocean Modeling System, optionally coupled to the [MARBL](https://marbl-ecosys.github.io) biogeochemistry model, with additions for CDR research such as CDR release forcing and nested runs with upscaling.
-It suits experienced ocean modelers who want full control over the model's compile-time and run-time settings.
+### [C-Star](https://github.com/CWorthy-ocean/C-Star) ([docs](https://c-star.readthedocs.io/))
+The Python workflow system that manages the entire ocean modeling process: handling setup, data management, provenance tracking and orchestration of UCLA-ROMS.
+Its Forge application, with a point-and-click wizard, builds a new domain and its input files; a **blueprint** records everything one run needs; a **workplan** chains runs into a multi-step experiment.
+The same files run on a laptop or on a [supported HPC system](https://c-star.readthedocs.io/en/latest/deployments/machines.html), from the `cstar` command line.
+Use C-Star to get from a region to a running simulation quickly, or to share runs that others can reproduce.
 
 ### [ROMS-Tools](https://github.com/CWorthy-ocean/roms-tools) ([docs](https://roms-tools.readthedocs.io/))
 A Python package that generates the netCDF input files UCLA-ROMS needs (grid, initial conditions, surface, boundary, tidal and river forcing, CDR forcing, nesting) from global source datasets, and that reads, plots and analyzes model output, including CDR metrics.
 Use it directly when you want hands-on control of each input; C-Star also uses it under the hood.
 
-### [C-Star](https://github.com/CWorthy-ocean/C-Star) ([docs](https://c-star.readthedocs.io/))
-The Python workflow system that ties the stack together, handling setup, data management, provenance tracking and orchestration of UCLA-ROMS.
-Its Forge application, with a point-and-click wizard, builds a new domain and its input files; a **blueprint** records everything one run needs; a **workplan** chains runs into a multi-step experiment.
-The same files run on a laptop or on a [supported HPC system](https://c-star.readthedocs.io/en/latest/deployments/machines.html), from the `cstar` command line.
-Use C-Star to get from a region to a running simulation quickly, or to share runs that others can reproduce.
-C-Star is under active development, and we welcome early users and feedback!
+### [UCLA-ROMS](https://github.com/CWorthy-ocean/ucla-roms) ([docs](https://cworthy-ucla-roms.readthedocs.io/))
+The ocean model itself, written in Fortran: our fork of the UCLA Regional Ocean Modeling System, optionally coupled to the [MARBL](https://marbl-ecosys.github.io) biogeochemistry model, with additions for CDR research such as CDR release forcing and nested runs with upscaling.
+It suits experienced ocean modelers who want full control over the model's compile-time and run-time settings.
+
 
 # Where to start
 
@@ -55,5 +55,5 @@ The [ROMS-Tools examples](https://roms-tools.readthedocs.io/en/latest/examples.h
 
 # We want your feedback!
 
-Anyone is welcome to open an issue or start a discussion on any of these repositories ([UCLA-ROMS](https://github.com/CWorthy-ocean/ucla-roms/discussions), [ROMS-Tools](https://github.com/CWorthy-ocean/roms-tools/discussions), [C-Star](https://github.com/CWorthy-ocean/C-Star/discussions)).
+C-Star is under active development, and we welcome early users and feedback. Please feel free to open an issue or start a discussion on any of our repositories ([UCLA-ROMS](https://github.com/CWorthy-ocean/ucla-roms/discussions), [ROMS-Tools](https://github.com/CWorthy-ocean/roms-tools/discussions), [C-Star](https://github.com/CWorthy-ocean/C-Star/discussions)).
 Let us know what is and isn't working, where your pain points are for ocean modeling, and what you'd like to see next!
