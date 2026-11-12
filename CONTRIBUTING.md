@@ -31,8 +31,6 @@ include.
 
 ## Pull requests
 
-- Comment on the issue you want to work on and wait to be assigned before you
-  start, unless you are already a collaborator.
 - Keep the change focused on one thing. Open an issue first for anything larger
   than a fix.
 - Run the repository's tests and `pre-commit run --all-files` before you push;
